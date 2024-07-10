@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Vinculamos nuestro favicon-->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" >
+    <!--Vinculamos con fontAwesome-->
+    <script src="https://kit.fontawesome.com/d62a74ba78.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><h1><i class="fa-solid fa-user-secret"></i>Encriptador de texto</h1></div>
+    </header>
+    <main>
+        <video autoplay loop muted >
+            <source src="./video/backgroundMain.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <section class="input-section">
+            <div class="output-container">
+                <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+                    <div class="buttons">
+                        <button onclick="encriptar()">Encriptar</button>
+                        <button onclick="desencriptar()">Desencriptar</button>
+                    </div>
+            </div>
+            
+        </section>
+        <aside>
+            <div class="output-container">
+                <textarea id="outputText" placeholder="Ningún mensaje fue encontrado" readonly></textarea>
+                <button onclick="copiar()">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="logo"><h2>Oracle Alura - GRUPO 7: Julian Massardi</h2></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
